@@ -10,17 +10,3 @@ __pycache__/
 # Entornos de desarrollo
 .idea/
 .vscode/
-
-# Archivos de base de datos
-*.sqlite3
-*.db
-
-# Logs
-*.log
-
-# Archivos temporales
-*.tmp
-*.temp
-
-# Directorio de modelos grandes (opcional)
-models/embedder/
