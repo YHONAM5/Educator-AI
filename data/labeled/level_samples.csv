@@ -1,0 +1,154 @@
+text,label
+"Una variable es como una caja donde guardamos información, por ejemplo x = 5.",basico
+"HTML sirve para estructurar páginas web, y CSS para darles color y diseño.",basico
+"En Python, para imprimir usamos print('Hola').",basico
+"Un bucle for repite instrucciones varias veces, como for i in range(5): print(i).",basico
+"Una base de datos es como una tabla que guarda datos organizados.",basico
+"JavaScript permite hacer que las páginas web sean interactivas.",basico
+"En Excel, una celda puede contener números, texto o fórmulas.",basico
+"El comando cd en la terminal sirve para cambiar de carpeta.",basico
+"Una IP es como la dirección de una casa, pero en internet.",basico
+"En Python, los comentarios se escriben con #.",basico
+"Un algoritmo es una serie de pasos para resolver un problema.",basico
+"En Word puedes usar negritas con Ctrl+B.",basico
+"Un archivo .jpg es una imagen comprimida.",basico
+"Ctrl+C copia y Ctrl+V pega.",basico
+"Un navegador web permite acceder a páginas en internet.",basico
+"Un byte equivale a 8 bits.",basico
+"Un sistema operativo es el programa que gestiona el hardware.",basico
+"En una red, un router conecta varios dispositivos a internet.",basico
+"HTML significa Lenguaje de Marcado de Hipertexto.",basico
+"CSS significa Hojas de Estilo en Cascada.",basico
+"Una contraseña segura tiene letras, números y símbolos.",basico
+"Python es un lenguaje interpretado y fácil de aprender.",basico
+"Los archivos PDF son documentos portátiles.",basico
+"En informática, hardware son las partes físicas.",basico
+"El software es la parte lógica de la computadora.",basico
+"El correo electrónico es una forma digital de enviar mensajes.",basico
+"El mouse es un dispositivo de entrada.",basico
+"El monitor es un dispositivo de salida.",basico
+"Un kilobyte son 1024 bytes.",basico
+"Ctrl+Z deshace la última acción.",basico
+"Google Drive sirve para almacenar archivos en la nube.",basico
+"Un smartphone es una computadora pequeña.",basico
+"Una tabla en Word organiza datos en filas y columnas.",basico
+"Un número binario solo usa 0 y 1.",basico
+"Ctrl+S guarda el archivo actual.",basico
+"Las redes sociales permiten compartir información en línea.",basico
+"Un antivirus protege contra programas maliciosos.",basico
+"Un dominio es el nombre de un sitio web, como google.com.",basico
+"WiFi permite conectarse sin cables.",basico
+"Una dirección MAC identifica un dispositivo de red.",basico
+"Un diagrama de flujo representa gráficamente un algoritmo.",basico
+"Un servidor web entrega páginas a los navegadores.",basico
+"Un archivo .exe es ejecutable en Windows.",basico
+"El lenguaje C es uno de los más antiguos y potentes.",basico
+"Un IDE es un entorno de desarrollo integrado.",basico
+"Un buscador web ayuda a encontrar información en internet.",basico
+"Una hoja de cálculo permite hacer operaciones con datos.",basico
+"El CPU es el cerebro de la computadora.",basico
+"Un cable HDMI transmite audio y video.",basico
+"En una dirección URL, http indica el protocolo.",basico
+
+"Una función en Python se define con def, por ejemplo def sumar(a,b): return a+b.",intermedio
+"El modelo OSI tiene 7 capas que van desde física hasta aplicación, cada una con funciones específicas.",intermedio
+"En SQL puedo hacer SELECT nombre FROM empleados WHERE salario > 2000.",intermedio
+"Para usar POO en Java, definimos clases, atributos y métodos, luego instanciamos con new.",intermedio
+"El control de versiones con Git se maneja con comandos como git init, git add, git commit.",intermedio
+"En HTML5 podemos usar la etiqueta <video> para reproducir multimedia.",intermedio
+"CSS Flexbox ayuda a distribuir elementos en una página web.",intermedio
+"Una API permite que dos programas se comuniquen.",intermedio
+"JSON es un formato ligero para intercambiar datos.",intermedio
+"Un bucle while repite instrucciones mientras una condición sea verdadera.",intermedio
+"Un servidor de bases de datos como MySQL permite almacenar grandes volúmenes de información.",intermedio
+"Los métodos en Java definen el comportamiento de los objetos.",intermedio
+"En Python podemos manejar excepciones con try y except.",intermedio
+"Un commit en Git es un registro de cambios en el código.",intermedio
+"Las llaves primarias en bases de datos identifican unívocamente a un registro.",intermedio
+"En CSS, media queries permiten adaptar el diseño a distintos dispositivos.",intermedio
+"Un join en SQL une datos de varias tablas.",intermedio
+"En programación, un array guarda varios valores en una sola variable.",intermedio
+"Las clases abstractas en Java no pueden instanciarse.",intermedio
+"Los decoradores en Python permiten modificar funciones.",intermedio
+"En Linux, ls muestra archivos y carpetas.",intermedio
+"SSH permite conectarse a un servidor de manera segura.",intermedio
+"Una cookie almacena datos de sesión en el navegador.",intermedio
+"REST es un estilo de arquitectura para diseñar APIs.",intermedio
+"Una transacción en SQL asegura consistencia de datos.",intermedio
+"Los índices en bases de datos mejoran las búsquedas.",intermedio
+"CSS Grid organiza elementos en filas y columnas.",intermedio
+"Una librería es un conjunto de funciones reutilizables.",intermedio
+"En programación, la recursividad es cuando una función se llama a sí misma.",intermedio
+"Los frameworks agilizan el desarrollo de aplicaciones.",intermedio
+"HTTP usa métodos como GET, POST, PUT y DELETE.",intermedio
+"El modelo cliente-servidor organiza cómo se comunican programas.",intermedio
+"Las llaves foráneas conectan tablas en bases de datos.",intermedio
+"Un IDE como Visual Studio Code incluye depuración y extensiones.",intermedio
+"En programación orientada a objetos, la herencia permite reutilizar código.",intermedio
+"Los bucles anidados ejecutan un bucle dentro de otro.",intermedio
+"El responsive design adapta sitios web a distintos dispositivos.",intermedio
+"En Python, range genera secuencias de números.",intermedio
+"Un firewall protege redes de accesos no autorizados.",intermedio
+"Los diagramas UML ayudan a modelar sistemas.",intermedio
+"Una máquina virtual emula un sistema operativo.",intermedio
+"Los ORM facilitan trabajar con bases de datos en código.",intermedio
+"Un branch en Git crea una copia del proyecto para trabajar aparte.",intermedio
+"En SQL, GROUP BY agrupa datos según un campo.",intermedio
+"En JavaScript, addEventListener maneja eventos de usuario.",intermedio
+"Un hash convierte datos en una cadena única e irrepetible.",intermedio
+"Los protocolos TCP/IP son la base de internet.",intermedio
+"En Python, with open() se usa para manejar archivos.",intermedio
+"El patrón MVC separa modelo, vista y controlador.",intermedio
+"Un contenedor como Docker empaqueta aplicaciones con sus dependencias.",intermedio
+
+"El algoritmo de Dijkstra encuentra el camino más corto en un grafo con pesos no negativos.",avanzado
+"Un perceptrón multicapa con retropropagación se entrena ajustando pesos en función del error.",avanzado
+"En normalización de bases de datos, 3FN elimina dependencias transitivas para reducir redundancia.",avanzado
+"El patrón de diseño Observer permite que múltiples objetos reaccionen a cambios de estado en otro objeto.",avanzado
+"En concurrencia, los deadlocks ocurren cuando varios hilos esperan recursos en un ciclo de dependencia.",avanzado
+"Un árbol B se usa en bases de datos para optimizar búsquedas.",avanzado
+"El algoritmo de Kruskal encuentra un árbol de expansión mínima.",avanzado
+"En criptografía, RSA usa clave pública y privada.",avanzado
+"El teorema CAP indica que no se puede tener consistencia, disponibilidad y tolerancia a particiones al mismo tiempo.",avanzado
+"Un sistema distribuido reparte tareas entre múltiples nodos.",avanzado
+"Los microservicios dividen aplicaciones en componentes independientes.",avanzado
+"El patrón Singleton asegura que una clase tenga solo una instancia.",avanzado
+"MapReduce procesa grandes volúmenes de datos en paralelo.",avanzado
+"En aprendizaje automático, el overfitting ocurre cuando el modelo memoriza en lugar de generalizar.",avanzado
+"Los autómatas finitos se usan en compiladores y teoría de lenguajes.",avanzado
+"En sistemas operativos, la planificación de CPU decide qué proceso se ejecuta primero.",avanzado
+"Un lock asegura exclusión mutua en acceso a recursos compartidos.",avanzado
+"Los grafos dirigidos representan relaciones con direcciones específicas.",avanzado
+"En bases de datos, ACID asegura integridad de transacciones.",avanzado
+"El patrón Factory Method delega la creación de objetos a subclases.",avanzado
+"Los árboles AVL se balancean automáticamente para mejorar búsquedas.",avanzado
+"En inteligencia artificial, los algoritmos genéticos simulan evolución.",avanzado
+"Los protocolos de consenso como Paxos aseguran coherencia en sistemas distribuidos.",avanzado
+"Un cluster Hadoop distribuye procesamiento de datos masivos.",avanzado
+"El algoritmo A* busca caminos óptimos usando heurísticas.",avanzado
+"Los lenguajes funcionales como Haskell priorizan funciones puras.",avanzado
+"En deep learning, una red convolucional procesa imágenes.",avanzado
+"El patrón Decorator añade responsabilidades a objetos en tiempo de ejecución.",avanzado
+"En sistemas, la segmentación de memoria organiza procesos en bloques lógicos.",avanzado
+"Los algoritmos de hashing distribuyen claves en tablas hash.",avanzado
+"El algoritmo de Bellman-Ford encuentra caminos más cortos con pesos negativos.",avanzado
+"En bases de datos distribuidas, el sharding divide datos en fragmentos.",avanzado
+"El patrón Proxy controla el acceso a un objeto.",avanzado
+"Los sistemas tolerantes a fallos siguen funcionando ante errores.",avanzado
+"Un grafo bipartito divide nodos en dos conjuntos sin conexiones internas.",avanzado
+"El aprendizaje por refuerzo entrena agentes a través de recompensas.",avanzado
+"El patrón Adapter convierte la interfaz de una clase en otra esperada.",avanzado
+"Los compiladores convierten código fuente en ejecutable.",avanzado
+"Un algoritmo de backtracking explora soluciones probando y retrocediendo.",avanzado
+"En concurrencia, semáforos controlan el acceso a recursos.",avanzado
+"El protocolo OAuth gestiona autenticación segura en aplicaciones.",avanzado
+"Las arquitecturas orientadas a eventos reaccionan a sucesos en tiempo real.",avanzado
+"El aprendizaje no supervisado agrupa datos sin etiquetas.",avanzado
+"Un Trie optimiza búsquedas de cadenas en diccionarios.",avanzado
+"El patrón Composite trata objetos individuales y compuestos de forma uniforme.",avanzado
+"Los sistemas embebidos integran software en dispositivos físicos.",avanzado
+"En cloud computing, la elasticidad permite escalar recursos dinámicamente.",avanzado
+"El patrón Command encapsula una petición como objeto.",avanzado
+"Un sistema de colas distribuye tareas entre procesos.",avanzado
+"En bases de datos NoSQL, los documentos se almacenan como JSON.",avanzado
+"Los algoritmos de clustering como K-means agrupan datos por similitud.",avanzado

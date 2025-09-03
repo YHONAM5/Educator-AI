@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentorFlexAI - Sistema de Tutoría Educativa Adaptativa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="public/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-robot me-2"></i>MentorFlexAI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#chat-section">Chat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tools-section">Herramientas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-section">Acerca de</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <!-- Sección de Chat Principal -->
+                <div class="card shadow-sm" id="chat-section">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">
+                            <i class="bi bi-chat-dots me-2"></i>Chat con MentorFlexAI
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="chat-container" id="chat-messages">
+                            <div class="system-message">
+                                <div class="message-content">
+                                    <p>¡Hola! Soy MentorFlexAI, tu tutor educativo adaptativo. Puedo responder tus preguntas y adaptar mis explicaciones a tu nivel de conocimiento. ¿En qué puedo ayudarte hoy?</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="level-indicator mt-3 mb-3" id="level-container">
+                            <span class="badge rounded-pill text-bg-secondary" id="level-badge">Nivel no detectado</span>
+                        </div>
+                        
+                        <form id="chat-form" class="mt-3">
+                            <div class="input-group">
+                                <input type="text" id="user-input" class="form-control" placeholder="Escribe tu pregunta aquí..." required>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-send"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Nueva Sección de Herramientas -->
+                <div class="card shadow-sm mt-4" id="tools-section">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0">
+                            <i class="bi bi-tools me-2"></i>Herramientas Avanzadas
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <!-- Herramienta 1: Clasificador de Nivel -->
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 border-info">
+                                    <div class="card-header bg-info text-white">
+                                        <h6 class="mb-0">
+                                            <i class="bi bi-speedometer2 me-2"></i>Clasificador de Nivel
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Analiza el nivel de complejidad de tu pregunta antes de enviarla.</p>
+                                        <form id="level-classifier-form">
+                                            <div class="mb-2">
+                                                <textarea id="level-text" class="form-control" rows="3" placeholder="Escribe tu pregunta para analizar su nivel..."></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-info btn-sm w-100">
+                                                <i class="bi bi-search me-1"></i>Analizar Nivel
+                                            </button>
+                                        </form>
+                                        <div id="level-result" class="mt-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Herramienta 2: Búsqueda Específica -->
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 border-warning">
+                                    <div class="card-header bg-warning text-dark">
+                                        <h6 class="mb-0">
+                                            <i class="bi bi-file-text me-2"></i>Búsqueda Específica
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Busca información en un documento específico de la base de conocimiento.</p>
+                                        <form id="specific-search-form">
+                                            <div class="mb-2">
+                                                <input type="text" id="specific-query" class="form-control" placeholder="Tu pregunta...">
+                                            </div>
+                                            <div class="mb-2">
+                                                <input type="text" id="document-filter" class="form-control" placeholder="Nombre del documento (opcional)">
+                                            </div>
+                                            <button type="submit" class="btn btn-warning btn-sm w-100">
+                                                <i class="bi bi-search me-1"></i>Buscar Específico
+                                            </button>
+                                        </form>
+                                        <div id="specific-result" class="mt-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel de Resultados de Herramientas -->
+                        <div id="tools-results" class="mt-3" style="display: none;">
+                            <div class="alert alert-light border">
+                                <h6><i class="bi bi-info-circle me-2"></i>Resultados de Herramientas</h6>
+                                <div id="tools-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección Acerca de (Actualizada) -->
+                <div class="card shadow-sm mt-4" id="about-section">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">
+                            <i class="bi bi-info-circle me-2"></i>Acerca de MentorFlexAI
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <h5>Sistema de Tutoría Educativa Adaptativa</h5>
+                        <p>MentorFlexAI es un sistema de tutoría educativa basado en IA que se adapta automáticamente al nivel del estudiante, proporcionando respuestas personalizadas.</p>
+                        
+                        <h6 class="mt-3">APIs Disponibles:</h6>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="api-card">
+                                    <div class="api-method">POST</div>
+                                    <div class="api-endpoint">/ask</div>
+                                    <div class="api-description">Respuesta completa con clasificación automática</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="api-card">
+                                    <div class="api-method">POST</div>
+                                    <div class="api-endpoint">/classify-level</div>
+                                    <div class="api-description">Clasificación de nivel únicamente</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="api-card">
+                                    <div class="api-method">POST</div>
+                                    <div class="api-endpoint">/ask-specific</div>
+                                    <div class="api-description">Búsqueda específica por documento</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h6 class="mt-3">Características principales:</h6>
+                        <ul>
+                            <li>Clasificación automática del nivel del estudiante (básico, intermedio, avanzado)</li>
+                            <li>Recuperación de contexto relevante desde documentos educativos</li>
+                            <li>Generación de respuestas adaptadas al nivel del estudiante</li>
+                            <li>Búsqueda específica en documentos particulares</li>
+                            <li>Interfaz de API completa para integración con otras plataformas</li>
+                        </ul>
+                        
+                        <h6 class="mt-3">Tecnologías utilizadas:</h6>
+                        <ul>
+                            <li>Modelo LLM: CodeLlama 7B (Instruct)</li>
+                            <li>Embeddings: Sentence-Transformers (all-MiniLM-L6-v2)</li>
+                            <li>Base de datos vectorial: ChromaDB</li>
+                            <li>Backend: FastAPI</li>
+                            <li>Frontend: HTML, CSS, JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">MentorFlexAI &copy; 2023 - Sistema de Tutoría Educativa Adaptativa</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="public/app.js"></script>
+</body>
+</html>
+
