@@ -1,6 +1,5 @@
 # Entornos virtuales
 VenvMentorFlex
-vectorstore/chroma
 
 # Archivos de Python
 __pycache__/
